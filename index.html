@@ -10725,6 +10725,9 @@ function mtGenProblems(dateStr){
     if(!reg) return false;
     var payload = {
       type: "message",
+      num: reg.num,
+      item: item,
+      dt: dateTimeLabel(),
       attachments: [{
         contentType: "application/vnd.microsoft.card.adaptive",
         content: {
